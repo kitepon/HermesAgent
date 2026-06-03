@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/og.svg" alt="X-HERMES-MCP — personal X research over Grok-4.x, billed against your existing X Premium Plus subscription" width="100%">
+  <img src=".github/og.png" alt="X-HERMES-MCP — personal X research over Grok-4.x, billed against your existing X Premium Plus subscription" width="100%">
 </p>
 
 # X-HERMES-MCP
@@ -7,11 +7,12 @@
 [![MCP](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io/)
 [![Grok](https://img.shields.io/badge/Grok-4.x-9146FF)](https://x.ai/)
 [![OAuth 2.1](https://img.shields.io/badge/OAuth-2.1-1f6feb)](#client-setup)
-[![License](https://img.shields.io/badge/license-Personal-lightgrey)](#license)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-3776ab?logo=python&logoColor=white)](https://www.python.org/)
+
+**English** · [日本語](README.ja.md)
 
 > **Personal X (Twitter) research as an MCP server — 6 tools backed by Grok-4.x `x_search`, no per-call API charge if you already have X Premium Plus.**
-
-**Read this in:** [English](README.md) · [日本語](README.ja.md)
 
 Built to be reachable from **Claude Code · Claude.ai · Codex CLI · ChatGPT Connectors** via OAuth 2.1 over HTTPS, with a self-hosted Caddy + Docker deployment behind a DDNS subdomain.
 
@@ -77,7 +78,7 @@ V4 backends bypass Grok-4.3 synthesis and call the Responses API directly — de
 
 ```mermaid
 flowchart LR
-    A1[Claude Code]:::client -->|HTTPS + OAuth 2.1| C[Caddy<br/>TLS termination<br/>hermes.example.dynv6.net]
+    A1[Claude Code]:::client -->|HTTPS + OAuth 2.1| C[Caddy<br/>TLS termination<br/>your-host.example.com]
     A2[Claude.ai]:::client -->|HTTPS + OAuth 2.1| C
     A3[Codex CLI]:::client -->|HTTPS + OAuth 2.1| C
     A4[ChatGPT Connectors]:::client -->|HTTPS + OAuth 2.1| C
@@ -168,4 +169,4 @@ Read [`CLAUDE.md`](CLAUDE.md) before contributing — it lists the absolute rule
 
 ## License
 
-Personal project. No license declared — treat as proprietary unless / until this changes.
+[MIT](LICENSE) © 2026 kitepon-rgb

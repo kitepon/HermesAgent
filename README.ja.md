@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/og.svg" alt="X-HERMES-MCP — X Premium Plus サブスクの範囲内で動く Grok-4.x ベースの個人向け X 検索 MCP" width="100%">
+  <img src=".github/og.png" alt="X-HERMES-MCP — X Premium Plus サブスクの範囲内で動く Grok-4.x ベースの個人向け X 検索 MCP" width="100%">
 </p>
 
 # X-HERMES-MCP
@@ -7,11 +7,12 @@
 [![MCP](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io/)
 [![Grok](https://img.shields.io/badge/Grok-4.x-9146FF)](https://x.ai/)
 [![OAuth 2.1](https://img.shields.io/badge/OAuth-2.1-1f6feb)](#クライアント接続)
-[![License](https://img.shields.io/badge/license-Personal-lightgrey)](#ライセンス)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-3776ab?logo=python&logoColor=white)](https://www.python.org/)
+
+[English](README.md) · **日本語**
 
 > **X (Twitter) の個人調査用 MCP サーバ。Grok-4.x の `x_search` をバックエンドにした 6 ツールが、既存の X Premium Plus サブスクの範囲内で動く (従量課金なし)。**
-
-**他の言語:** [English](README.md) · [日本語](README.ja.md)
 
 OAuth 2.1 + HTTPS で **Claude Code / Claude.ai / Codex CLI / ChatGPT コネクタ** から呼べる前提で設計。自宅サーバに Caddy + Docker、DDNS サブドメイン越しに展開する構成。
 
@@ -77,7 +78,7 @@ V4 バックエンドは Grok-4.3 の合成段をバイパスして Responses AP
 
 ```mermaid
 flowchart LR
-    A1[Claude Code]:::client -->|HTTPS + OAuth 2.1| C[Caddy<br/>TLS 終端<br/>hermes.example.dynv6.net]
+    A1[Claude Code]:::client -->|HTTPS + OAuth 2.1| C[Caddy<br/>TLS 終端<br/>your-host.example.com]
     A2[Claude.ai]:::client -->|HTTPS + OAuth 2.1| C
     A3[Codex CLI]:::client -->|HTTPS + OAuth 2.1| C
     A4[ChatGPT Connectors]:::client -->|HTTPS + OAuth 2.1| C
@@ -168,4 +169,4 @@ contribute 前に [`CLAUDE.md`](CLAUDE.md) を読むこと — 絶対遵守ル�
 
 ## ライセンス
 
-個人プロジェクト。ライセンス未宣言 — 変更があるまでは proprietary 扱い。
+[MIT](LICENSE) © 2026 kitepon-rgb
