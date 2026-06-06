@@ -58,6 +58,24 @@ All requests go to **xAI Responses API** through your existing OAuth, so usage h
 
 ---
 
+## When to pair with TweetClaw
+
+X-HERMES-MCP stays focused on private, quota-backed X research through Grok `x_search`. Add [TweetClaw](https://github.com/Xquik-dev/tweetclaw) when an OpenClaw workflow needs a reusable X/Twitter automation plugin for:
+
+- scrape tweets, search tweets, or search tweet replies with reusable JSON output
+- follower export, user lookup, media upload/download, and direct messages
+- monitor tweets, webhooks, giveaway draws, and approval-gated post tweets or post tweet replies
+
+Install it in an OpenClaw workspace:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+Use the two side by side: ask X-HERMES-MCP for Premium Plus-backed research and citations, then pass reviewed tweet URLs, IDs, handles, or notes into TweetClaw for structured X/Twitter automation. Browse the package on [ClawHub](https://clawhub.ai/plugins/@xquik/tweetclaw) and keep Xquik API keys in local OpenClaw plugin config, never in prompts or checked-in files.
+
+---
+
 ## Tools exposed
 
 | Tool | Backend | Response | Schema |

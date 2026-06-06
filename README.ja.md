@@ -58,6 +58,24 @@ OAuth 2.1 + HTTPS で **Claude Code / Claude.ai / Codex CLI / ChatGPT コネク�
 
 ---
 
+## TweetClaw と併用する場合
+
+X-HERMES-MCP は Grok `x_search` と X Premium Plus quota を使う個人向け調査経路に集中する。[TweetClaw](https://github.com/Xquik-dev/tweetclaw) は OpenClaw workflow で再利用できる X/Twitter automation plugin が必要な場合に追加する:
+
+- tweets 取得、tweets 検索、tweet replies 検索を JSON で再利用
+- follower export、user lookup、media upload/download、direct messages
+- tweets 監視、webhooks、giveaway draw、承認付き post tweets / post tweet replies
+
+OpenClaw workspace に追加:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+併用パターン: X-HERMES-MCP で Premium Plus 経路の調査と citations を取り、確認済みの tweet URL、ID、handle、メモだけを TweetClaw に渡して構造化された X/Twitter automation に使う。Package は [ClawHub](https://clawhub.ai/plugins/@xquik/tweetclaw) で確認し、Xquik API key は OpenClaw plugin のローカル設定に置く。prompt や git 管理ファイルに書かない。
+
+---
+
 ## 公開ツール
 
 | ツール | バックエンド | 応答 | スキーマ |
