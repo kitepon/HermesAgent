@@ -131,7 +131,7 @@ ConnectC2X と重複するツールはクライアント側で deny する。Cla
 要件: Docker、Hermes Agent v0.14.0 がホストにインストール済み、xAI OAuth 完了 (`hermes auth status xai-oauth` → `logged in`)、Caddy がリバースプロキシ、DDNS サブドメインがホストを指している。
 
 ```sh
-git clone https://github.com/kitepon-rgb/HermesAgent.git
+git clone https://github.com/kitepon/HermesAgent.git
 cd HermesAgent
 cp .env.example .env       # その後 chmod 600 して MCP_ADMIN_PASSWORD / X_HERMES_MCP_BASE_URL / OAUTH_DB_PATH を埋める
 docker compose up -d --build
@@ -169,4 +169,4 @@ contribute 前に [`CLAUDE.md`](CLAUDE.md) を読むこと — 絶対遵守ル�
 
 ## ライセンス
 
-[MIT](LICENSE) © 2026 kitepon-rgb
+[MIT](LICENSE) © 2026 kitepon

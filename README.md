@@ -131,7 +131,7 @@ Leave `count_tweets` / `get_retweeted_by` / `get_list_tweets` enabled — those 
 Requires: Docker, Hermes Agent v0.14.0 installed on the host, xAI OAuth completed (`hermes auth status xai-oauth` → `logged in`), Caddy as reverse proxy, and a DDNS subdomain pointing at the host.
 
 ```sh
-git clone https://github.com/kitepon-rgb/HermesAgent.git
+git clone https://github.com/kitepon/HermesAgent.git
 cd HermesAgent
 cp .env.example .env       # then chmod 600 and fill MCP_ADMIN_PASSWORD, X_HERMES_MCP_BASE_URL, OAUTH_DB_PATH
 docker compose up -d --build
@@ -169,4 +169,4 @@ Read [`CLAUDE.md`](CLAUDE.md) before contributing — it lists the absolute rule
 
 ## License
 
-[MIT](LICENSE) © 2026 kitepon-rgb
+[MIT](LICENSE) © 2026 kitepon
